@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Self-Care Space</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>🌿 My Self-Care Space</h1>
+            <p>A little place to take care of yourself every day.</p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Welcome -->
+        <section class="welcome card">
+            <h2>Welcome back! 👋</h2>
+            <p>Take a moment for yourself today.</p>
+
+            <div class="quote">
+                "Small steps every day can make a big difference."
+            </div>
+        </section>
+
+        <!-- Daily Habits -->
+        <section class="card">
+            <h2>🌱 Today's Habits</h2>
+
+            <div class="habit">
+                <label>
+                    <input type="checkbox" class="habit-checkbox">
+                    Drink enough water
+                </label>
+            </div>
+
+            <div class="habit">
+                <label>
+                    <input type="checkbox" class="habit-checkbox">
+                    Take a break
+                </label>
+            </div>
+
+            <div class="habit">
+                <label>
+                    <input type="checkbox" class="habit-checkbox">
+                    Spend some time outside
+                </label>
+            </div>
+
+            <div class="habit">
+                <label>
+                    <input type="checkbox" class="habit-checkbox">
+                    Do something you enjoy
+                </label>
+            </div>
+
+            <div class="habit">
+                <label>
+                    <input type="checkbox" class="habit-checkbox">
+                    Get ready for a good night's sleep
+                </label>
+            </div>
+
+            <p id="progressText">0 of 5 habits completed</p>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </section>
+
+        <!-- Mood -->
+        <section class="card">
+            <h2>😊 How are you feeling?</h2>
+
+            <div class="moods">
+                <button class="mood" data-mood="Great">😄</button>
+                <button class="mood" data-mood="Good">🙂</button>
+                <button class="mood" data-mood="Okay">😐</button>
+                <button class="mood" data-mood="Tired">😴</button>
+                <button class="mood" data-mood="Sad">😔</button>
+            </div>
+
+            <p id="moodMessage">Choose how you're feeling today.</p>
+        </section>
+
+        <!-- Water -->
+        <section class="card">
+            <h2>💧 Water Tracker</h2>
+
+            <p>Glasses today:</p>
+
+            <div class="water-count">
+                <span id="waterCount">0</span> / 8
+            </div>
+
+            <button id="addWater">+ Add a glass</button>
+            <button id="resetWater" class="secondary">Reset</button>
+        </section>
+
+        <!-- To Do -->
+        <section class="card">
+            <h2>✅ My Tasks</h2>
+
+            <div class="task-input">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Add a task..."
+                >
+
+                <button id="addTask">Add</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </section>
+
+        <!-- Journal -->
+        <section class="card">
+            <h2>📝 My Journal</h2>
+
+            <p>Write anything you'd like to remember about today.</p>
+
+            <textarea
+                id="journal"
+                placeholder="How was your day?"
+            ></textarea>
+
+            <button id="saveJournal">Save Journal</button>
+
+            <p id="journalMessage"></p>
+        </section>
+
+        <!-- Sleep -->
+        <section class="card">
+            <h2>🌙 Sleep</h2>
+
+            <label for="sleepHours">How many hours did you sleep?</label>
+
+            <input
+                type="number"
+                id="sleepHours"
+                min="0"
+                max="24"
+                placeholder="Hours"
+            >
+
+            <button id="saveSleep">Save</button>
+
+            <p id="sleepMessage"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🌿 Take care of yourself, one day at a time.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
